@@ -32,7 +32,7 @@ ZSH_THEME="agnoster"
 # zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true:
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -113,4 +113,6 @@ alias szsh="source ~/.zshrc"
 
 # Path to the home directory in Windows
 export WIN_HOME=$(wslpath -u "$(powershell.exe "\$env:USERPROFILE")" | tr -d '\r\n')
+
+export DEFAULT_USER=$USER
 

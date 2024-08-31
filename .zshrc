@@ -32,7 +32,7 @@ ZSH_THEME="agnoster"
 # zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
+# DISABLE_MAGIC_FUNCTIONS="true:
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -104,6 +104,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 alias python="python3"
+alias py="python3"
+alias wpy="python.exe"
 alias ff="vim \$(find -type f | fzf)"
 alias fd="cd \$(find -type d | fzf)"
+alias cdwin="cd \$WIN_HOME"
+alias szsh="source ~/.zshrc"
+
+# Path to the home directory in Windows
+export WIN_HOME=$(wslpath -u "$(powershell.exe "\$env:USERPROFILE")" | tr -d '\r\n')
 

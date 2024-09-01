@@ -104,12 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 alias python="python3"
-alias py="python3"
-alias wpy="python.exe"
 alias ff="vim \$(find -type f | fzf)"
 alias fd="cd \$(find -type d | fzf)"
 alias cdwin="cd \$WIN_HOME"
 alias szsh="source ~/.zshrc"
+alias pfk="cd ~/pyfunkeys && python.exe -m pyfunkeys"
 
 # Path to the home directory in Windows
 export WIN_HOME=$(wslpath -u "$(powershell.exe "\$env:USERPROFILE")" | tr -d '\r\n')

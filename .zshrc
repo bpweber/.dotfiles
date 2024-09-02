@@ -115,3 +115,9 @@ export WIN_HOME=$(wslpath -u "$(powershell.exe "\$env:USERPROFILE")" | tr -d '\r
 
 export DEFAULT_USER=$USER
 
+export FZF_DEFAULT_OPTS="--height=30% --layout=reverse --info=inline --border --margin=1 --padding=1 \
+--color=bg+:#363a4f,spinner:#f4dbd6,hl:#ed8796 \
+--color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
+--color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
+--multi"
+
